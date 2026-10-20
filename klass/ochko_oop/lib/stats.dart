@@ -15,4 +15,6 @@ int get losses => _partsPlayer.where((loss) => loss == 'Победа дилле�
 
 int get draws => _partsPlayer.where((draw) => draw == 'Ничья').length;
 
+
+
 }

@@ -1,4 +1,4 @@
- 
+
 class Card {
   final String rank;
   final String suit;
