@@ -1,7 +1,15 @@
-
+enum Suit{
+  piki('♠'),
+  chervy('♥'),
+  tref('♣'),
+  buba('♦');
+  final String symbol;
+  const Suit(this.symbol);
+  
+  }
 class Card {
   final String rank;
-  final String suit;
+  final Suit suit;
 
   Card(this.rank, this.suit);
 
@@ -22,5 +30,5 @@ class Card {
   bool get ispictures => rank == 'V' || rank == 'D' || rank == 'K';
 
   @override
-  String toString() => '$rank $suit';
+  String toString() => '$rank ${suit.symbol}';
 }
